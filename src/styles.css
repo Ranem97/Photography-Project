@@ -1,22 +1,94 @@
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #1b1b1b;
+  --footer-color: #282323;
+  --heading-font-family: "Roboto", sans-serif;
+  --default-font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: var(--secondary-color);
+}
+
 .hero {
   text-align: center;
-  font-family: "Roboto", sans-serif;
-  color: #ffffff;
+  font-family: var(--heading-font-family);
+  color: var(--primary-color);
   background-image: url("../images/bg.jpg");
-  background-size: cover;
+  background-size: 100% 100%;
   height: 909px;
   background-repeat: no-repeat;
+
+  font-style: normal;
 }
 
 .hero button {
   font-weight: bold;
   font-size: 14px;
-  background-color: #ffffff;
+  background-color: var(--primary-color);
   padding: 18px 30px;
   border-radius: 50px;
-  border: #ffffff;
-  font-family: "Montserrat", sans-serif;
+  border: var(--primary-color);
+  font-family: var(--default-font-family);
+  margin: 18px auto;
 }
+
+.hero h1 {
+  font-size: 72px;
+  line-height: 84px;
+  font-weight: 700;
+}
+.hero h2 {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.hero h3 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+
 .hero .caption {
-  padding-top: 300px;
+  padding-top: 200px;
+}
+nav .navbar-brand {
+  margin-left: 30px;
+}
+nav .list-items {
+  margin-right: 30px;
+}
+.container4 img {
+  margin: 0px 40px;
+}
+
+footer {
+  background-color: var(--footer-color);
+  height: 100px;
+  color: var(--primary-color);
+  text-align: center;
+  padding: 38px;
+}
+footer .social a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 16px;
+  padding: 15px 14px;
+}
+footer h4 {
+  font-family: var(--heading-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+footer h3 {
+  font-family: var(--heading-font-family);
+  font-style: bold;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 19px;
 }
