@@ -1,19 +1,14 @@
-.container {
-  margin: 0;
-  padding: 0;
-}
-.container .hero {
+.hero {
   text-align: center;
   font-family: "Roboto", sans-serif;
-  background-image: url("../images/bg.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  height: 900px;
   color: #ffffff;
+  background-image: url("../images/bg.jpg");
+  background-size: cover;
+  height: 909px;
+  background-repeat: no-repeat;
 }
-.container .hero button {
+
+.hero button {
   font-weight: bold;
   font-size: 14px;
   background-color: #ffffff;
@@ -21,4 +16,7 @@
   border-radius: 50px;
   border: #ffffff;
   font-family: "Montserrat", sans-serif;
+}
+.hero .caption {
+  padding-top: 300px;
 }
