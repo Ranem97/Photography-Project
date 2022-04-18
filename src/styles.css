@@ -1,6 +1,7 @@
 :root {
   --primary-color: #ffffff;
   --secondary-color: #1b1b1b;
+  --sub-heading-color: #f65282;
   --footer-color: #282323;
   --heading-font-family: "Roboto", sans-serif;
   --default-font-family: "Montserrat", sans-serif;
@@ -22,7 +23,7 @@ body {
   font-style: normal;
 }
 
-.hero button {
+button {
   font-weight: bold;
   font-size: 14px;
   background-color: var(--primary-color);
@@ -58,12 +59,6 @@ body {
 nav .navbar-brand {
   margin-left: 30px;
 }
-nav .list-items {
-  margin-right: 30px;
-}
-.container4 img {
-  margin: 0px 40px;
-}
 
 footer {
   background-color: var(--footer-color);
@@ -72,7 +67,8 @@ footer {
   text-align: center;
   padding: 38px;
 }
-footer .social a {
+footer .social a,
+.about .social a {
   text-decoration: none;
   color: var(--primary-color);
   font-size: 16px;
@@ -91,6 +87,44 @@ footer h3 {
   font-weight: 700;
   font-size: 24px;
   line-height: 19px;
+}
+.about h1,
+.about p {
+  color: var(--primary-color);
+}
+.about h4 {
+  color: var(--sub-heading-color);
+  font-family: var(--heading-font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.1em;
+}
+.about h1 {
+  font-family: var(--heading-font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 75px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.about .container {
+  margin: 0;
+}
+.about p {
+  font-family: var(--heading-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+.my-camera {
+  background-color: var(--footer-color);
+  padding: 20px;
+  color: var(--primary-color);
+  width: fit-content;
 }
 
 @media (max-width: 960px) {
