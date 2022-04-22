@@ -34,10 +34,13 @@ button {
   margin: 18px auto;
 }
 
-.hero h1 {
+.hero h1,
+.gallery h1 {
   font-size: 72px;
   line-height: 84px;
   font-weight: 700;
+  color: var(--primary-color);
+  text-align: center;
 }
 .hero h2 {
   font-size: 24px;
@@ -125,6 +128,12 @@ footer h3 {
   padding: 20px;
   color: var(--primary-color);
   width: fit-content;
+}
+.gallery h1 {
+  margin-bottom: 160px;
+}
+.content {
+  margin-bottom: 100px;
 }
 
 @media (max-width: 960px) {
