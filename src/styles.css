@@ -32,7 +32,13 @@ button {
   border: var(--primary-color);
   font-family: var(--default-font-family);
 }
-
+button a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+button a:hover {
+  color: var(--footer-color);
+}
 .hero h1,
 .gallery h1,
 .contact h1 {
@@ -150,10 +156,21 @@ footer h3 {
 .collapse {
   justify-content: end;
 }
+.container-fluid {
+  padding-top: 8px;
+}
 
 @media (max-width: 960px) {
+  .navbar-nav {
+    text-align: center;
+  }
+  .contact h1 {
+    font-size: 52px;
+    margin-bottom: 100px;
+  }
   .gallery h1 {
     margin-bottom: 80px;
+    font-size: 52px;
   }
   .about h1 {
     font-size: 45px;
@@ -200,8 +217,9 @@ footer h3 {
     font-size: 12px;
   }
   .hero {
-    background-size: 100% 100%;
-    height: 200;
+    background-size: 100% 80%;
+    height: 150;
+    margin-bottom: 0;
   }
   .hero .caption {
     padding-top: 150px;
